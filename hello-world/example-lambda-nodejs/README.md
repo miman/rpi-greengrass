@@ -1,9 +1,7 @@
-# ggs-gpio-test-lambda-nodejs
+# example-lambda-nodejs
 Lambda functions for Greengrass running on an AWS greengrass device accessing external hardware
 
-This project contains a Lambda polling the state of a button (on PIN 24) and this state will then control if a LED (on PIN 23) is on or off.
-
-It will also POST an event for each button state transition to IoT Cloud on Topic ***hello-world***
+This project contains a Lambda posting a text msg to the Topic ***hello/world*** to **IoT Cloud** once every 5 seconds.
 
 ## Prerequisites
 
@@ -11,13 +9,7 @@ It will also POST an event for each button state transition to IoT Cloud on Topi
 Observer that you MUST copy the greengrasssdk folder from the [Javascript SDK](https://github.com/aws/aws-greengrass-core-sdk-js/) to this folder before you can create a deployment package !
 
 ### Resources
-You MUST also create this Resources:
-* A device resource for ***/dev/gpiomem***
-
-For both resources:
-* you should select **Group owner file access permission**:
-    * ***Automatically add OS group permissions of the Linux group that owns the resource***
-* You need to add this lambda as **Lambda function affiliations**
+No resources needs to be created for this project
 
 ### Subscriptions
 You MUST add a subscription for ***hello/world*** with this Lambda as **Source** & IoT Cloud as **Target**
@@ -32,6 +24,6 @@ When the Lambda has been uploaded you MUST do the following 2 steps before you c
 
 The alias should then be choosen when creating/updating the Lambda in the Greegrass group before deploying it.
 
-Remember that the Resources & Subscriptions MUST be updated with the new version for the Lambda to work !!
+Remember that the Subscriptions MUST be updated with the new version for the Lambda to work !!
 
 [Back to Main page](../README.md)

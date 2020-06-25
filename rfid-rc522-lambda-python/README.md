@@ -1,4 +1,4 @@
-# rpi-greengrass
+# rfid-rc522-lambda-python
 Lambda functions for Greengrass running on an AWS greengrass device accessing external hardware
 
 This project contains a Lambda polling RC522 RFID reader & sending RFID tags to IoT Core over MQTT

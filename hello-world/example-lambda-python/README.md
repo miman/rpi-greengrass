@@ -1,19 +1,18 @@
-# ggs-mqtt-listen-lambda-nodejs
+# example-lambda-python
 Lambda functions for Greengrass running on an AWS greengrass device accessing external hardware
 
-This project contains a Lambda echoing the data received on MQTT Topic ***mqtt/test*** to IoT Cloud Topic ***hello-world***
+This project contains a Lambda posting a text msg to the Topic ***hello/world*** to **IoT Cloud** once every 5 seconds.
 
 ## Prerequisites
 
 ### Greengrass SDK
-Observer that you MUST copy the greengrasssdk folder from the [Javascript SDK](https://github.com/aws/aws-greengrass-core-sdk-js/) to this folder before you can create a deployment package !
+Observer that you MUST copy the greengrasssdk folder from the [Python SDK](https://github.com/aws/aws-greengrass-core-sdk-python/) to this folder before you can create a deployment package !
 
 ### Resources
 No resources needs to be created for this project
 
 ### Subscriptions
-You MUST add a subscription for ***hello/world*** with this **Lambda** as **Source** & **IoT Cloud** as **Target**
-You MUST add a subscription for ***mqtt/test*** with this **IoT Cloud** as **Source** & **Lambda** as **Target**
+You MUST add a subscription for ***hello/world*** with this Lambda as **Source** & IoT Cloud as **Target**
 
 ## Usage
 Run the **zip-ggs-module.bat** to create a zip file that can be uploaded to the Lambda function

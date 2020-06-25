@@ -1,4 +1,4 @@
-# rpi-greengrass
+# cntrl-gpio-pin-lambda-python
 Lambda functions for Greengrass running on an AWS greengrass device accessing external hardware
 
 This project contains a Lambda polling the state of a button (on PIN 24) and this state will then control if a LED (on PIN 23) is on or off.
