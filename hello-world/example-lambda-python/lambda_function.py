@@ -41,6 +41,7 @@ device = os.environ['AWS_IOT_THING_NAME']
 
 
 def greengrass_hello_world_run():
+    logger.error("example-lambda-python> posting new msg")
     text_to_send="Hello IoT world! Sent from Greengrass Core from " + device
     try:
         client.publish(
@@ -56,6 +57,7 @@ def greengrass_hello_world_run():
 
 
 # Start executing the function above
+logger.error("example-lambda-python> Starting test publisher")
 greengrass_hello_world_run()
 
 
