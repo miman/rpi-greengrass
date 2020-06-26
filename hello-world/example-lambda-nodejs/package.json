@@ -4,7 +4,6 @@
   "description": "greengrass test app in nodejs",
   "main": "index.js",
   "dependencies": {
-    "aws-greengrass-core-sdk": "^1.6.1",
     "cbor": "^5.0.1"
   },
   "devDependencies": {},
