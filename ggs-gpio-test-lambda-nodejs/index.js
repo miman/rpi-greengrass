@@ -12,7 +12,7 @@
  */
 
 const ggSdk = require('greengrass-core-sdk');
-var gpio = require('../rpi-gpio');
+var gpio = require('rpi-gpio');
 
 const iotClient = new ggSdk.IotData();
 const os = require('os');
