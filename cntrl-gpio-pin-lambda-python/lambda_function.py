@@ -76,7 +76,8 @@ def post_hello_world():
     except Exception as e:
         logger.error("Failed to publish message: " + repr(e))
 
-def start_btn_trigger():
+def start_app():
+    print("Python GPIO Test Lambda started")
     try:
         while True:
             input_state = GPIO.input(BUTTONPIN)
@@ -93,7 +94,7 @@ def start_btn_trigger():
 
 
 # Start executing the function above
-start_btn_trigger()
+start_app()
 
 # This is a dummy handler and will not be invoked
 # Instead the code above will be executed in an infinite loop for our example

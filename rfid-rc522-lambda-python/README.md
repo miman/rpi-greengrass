@@ -35,4 +35,23 @@ The alias should then be choosen when creating/updating the Lambda in the Greegr
 
 Remember that the Resources & Subscriptions MUST be updated with the new version for the Lambda to work !!
 
+PIN Connection
+
+RC522   --  R-PI
+=================
+3.3     --  3.3
+
+RST     --  PIN 22
+
+GND     --  PIN & (gnd)
+
+MISO    --  PIN 21 (MISO)
+
+MOSI    --  PIN 19 (MOSI)
+
+SCK     --  PIN 23 (SCK)     SCK = Selektor
+
+SDA     --  PIN 24 (SDA)
+
+
 [Back to Main page](../README.md)
