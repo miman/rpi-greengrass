@@ -41,17 +41,17 @@ RC522   --  R-PI
 =================
 3.3     --  3.3
 
-RST     --  PIN 22
+RST     --  PIN 22 / GPIO23
 
-GND     --  PIN & (gnd)
+GND     --  GND
 
-MISO    --  PIN 21 (MISO)
+MISO    --  PIN 21 (MISO) / SPMISO / GPIO09
 
-MOSI    --  PIN 19 (MOSI)
+MOSI    --  PIN 19 (MOSI) / SPMOSI / GPIO10
 
-SCK     --  PIN 23 (SCK)     SCK = Selektor
+SCK     --  PIN 23 (SCK) / SPISCLK/ GPIO11                        SCK = Selektor
 
-SDA     --  PIN 24 (SDA)
+SDA     --  PIN 24 (SDA) / SPICEO / GPIO08
 
 
 [Back to Main page](../README.md)
