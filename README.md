@@ -5,6 +5,9 @@ This project cotains a number of test Lambdas accessing external hardware runnin
 
 Each sub-project contains code for a specific Lambda
 
+Video tutorials for these projects can be found here:
+https://www.youtube.com/playlist?list=PLoZRZ2zrcw_8meOFNa1iNrBmBtWFG7EYR
+
 Sub-modules
 * [Hello World](./hello-world/README.md)
     * Contains Lambdas that only send a hardcoded string to the IoT Core backend over MQTT (no usage of external HW)
