@@ -45,7 +45,7 @@ exports.handler = function handler(event, context) {
 /*
 The received context
 {
-  invokedFunctionArn: 'arn:aws:lambda:eu-west-1:711956557359:function:ggs-mqtt-listen:2',
+  invokedFunctionArn: 'arn:aws:lambda:eu-west-1:123456789:function:ggs-mqtt-listen:2',
   awsRequestId: '03048fc4-ead8-40b6-7fbf-6883bcfa11b8',
   functionName: 'ggs-mqtt-listen',
   functionVersion: '2',
