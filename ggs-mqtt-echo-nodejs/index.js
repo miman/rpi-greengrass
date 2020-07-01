@@ -48,7 +48,7 @@ The received context
   clientContext: { 
     client: {}, 
     Custom: { 
-        subject: 'viot/test' 
+        subject: 'echo/input' 
     }, 
     env: {}
   }
