@@ -15,9 +15,8 @@ function publishCallback(err, data) {
 }
 
 let myName = process.env.AWS_IOT_THING_NAME;
-// const myPlatform = util.format('%s-%s', os.platform(), os.release());
 const msgToSend = {
-    topic: 'hello/world',
+    topic: 'echo/output',
     payload: '',
     queueFullPolicy: 'AllOrError',
 };
@@ -36,10 +35,7 @@ function publishMqttMsg(msg, topic) {
 exports.handler = function handler(event, context) {
     console.log("ggs-mqtt-listen-lambda> event received");
     console.log(event);
-    // console.log(context);
-    // console.log(context.clientContext.Custom);
     publishMqttMsg(event, context.clientContext.Custom.subject);
-    console.log("ggs-mqtt-listen-lambda> MQTT msg posted");
 };
 
 /*
